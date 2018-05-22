@@ -1,1 +1,19 @@
-<h1>SOMETHING NEW!</h1>
+<h2>New Note</h2>
+<form action="">
+  <fieldset class="form-group">
+    <label for="title">Title</label>
+    <input class="form-control" for="text" id="title" name="title" ng-model="note.title"/>
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="description">Description</label>
+    <input class="form-control" for="text" id="description" name="description" ng-model="note.description"/>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="content">Content</label>
+    <textarea class="form-control" for="text" id="content" name="content" ng-model="note.content"></textarea>
+  </fieldset>
+
+  <input type="submit" value="{{isSubmitting ? 'Saving...': 'Save'}}" class="btn btn-default" ng-click="saveNote(note)" ng-disabled="isSubmitting">
+</form>
