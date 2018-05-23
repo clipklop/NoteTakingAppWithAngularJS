@@ -30,7 +30,7 @@ angular.module('NoteWrangler').config(function($routeProvider) {
     })
 
     .when('/users/:id', {
-      templateUrl: "assets/templates/users/index.html",
+      templateUrl: "assets/templates/users/show.html",
       controller: "UsersShowController"
     });    
 });
